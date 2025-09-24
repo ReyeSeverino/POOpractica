@@ -23,8 +23,7 @@ namespace POOpractica1
         private void btn_llamar_Click(object sender, EventArgs e)
         {
             Motorolla.Llamar();
-            //Motorolla.marca = "Samsung";
-            Motorolla.Llamar();
+            
         }
     }
 }
