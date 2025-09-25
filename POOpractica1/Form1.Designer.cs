@@ -28,25 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_llamar = new System.Windows.Forms.Button();
+            this.btn_ejecutar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btn_llamar
+            // btn_ejecutar
             // 
-            this.btn_llamar.Location = new System.Drawing.Point(310, 97);
-            this.btn_llamar.Name = "btn_llamar";
-            this.btn_llamar.Size = new System.Drawing.Size(280, 169);
-            this.btn_llamar.TabIndex = 0;
-            this.btn_llamar.Text = "Llamar";
-            this.btn_llamar.UseVisualStyleBackColor = true;
-            this.btn_llamar.Click += new System.EventHandler(this.btn_llamar_Click);
+            this.btn_ejecutar.Location = new System.Drawing.Point(413, 119);
+            this.btn_ejecutar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ejecutar.Name = "btn_ejecutar";
+            this.btn_ejecutar.Size = new System.Drawing.Size(373, 208);
+            this.btn_ejecutar.TabIndex = 0;
+            this.btn_ejecutar.Text = "Ejecutar";
+            this.btn_ejecutar.UseVisualStyleBackColor = true;
+            this.btn_ejecutar.Click += new System.EventHandler(this.btn_ejecutar_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_llamar);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btn_ejecutar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -55,7 +57,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_llamar;
+        private System.Windows.Forms.Button btn_ejecutar;
     }
 }
 
