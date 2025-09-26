@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace Productos
 {
-    public class Celular //Clase es un molde o formulario vacio para crear objetos
+    public class Celular
     {
         private string Marca;
         private string Color;
         private string Tipo;
 
-        public Celular() //shortcut ctor + tab + tab para crear constructor
+        public Celular() 
         {
-            //este metodo se ejecuta automaticamente al crear un objeto
-            //se usa para inicializar las variables de la clase
             Marca = "Nokia";
             Color = "azul";
             Tipo = "Smartphone";
         }
 
-        public Celular(string M) //Un constructor que recibe un parametro M que se utlizara para inicializar una de sus variables
+        public Celular(string M)
         {
             Marca = M;
             Color = "Negro";
@@ -35,16 +33,21 @@ namespace Productos
             Tipo = T;
         }
 
-        public void Ejecutar()
+        public void Ejecutar() //Este metodo no retorna ningun valor ya que es void
         {
 
             System.Windows.Forms.MessageBox.Show("Tu celular es un: "+ Marca +" Color: "+ Color +" y es Tipo: "+ Tipo);
 
         }
 
-        public void Mensaje() 
+        public string Mensaje(string N, string Msj) //Este metodo retorna un valor de tipo string
         {
+            string Nombre = N;
+            string Enviando = Msj;
 
+            string Mensaje = "El mensaje: " + Enviando + " fue enviado por: " + Nombre;
+
+            return Mensaje;
         }
 
     }
