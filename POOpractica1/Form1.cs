@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using POOpractica1.Productos;
 using Productos;
 
 namespace POOpractica1
@@ -15,8 +16,7 @@ namespace POOpractica1
     {
 
         Celular Motorolla = new Celular();
-        //Celular Samsung = new Celular("Samsung");
-        //Celular Iphone = new Celular("Apple", "Blanco", "Smartphone");
+
         public Form1()
         {
             InitializeComponent();
@@ -24,8 +24,9 @@ namespace POOpractica1
 
         private void btn_ejecutar_Click(object sender, EventArgs e)
         {
-            //Motorolla.Ejecutar();
-            MessageBox.Show(Motorolla.Mensaje("Juan", "Hola mundo...!"));
+            Motorolla.Ejecutar();
+
+            MessageBox.Show(Operaciones.Sumar(100, 400).ToString());
 
         }
     }
