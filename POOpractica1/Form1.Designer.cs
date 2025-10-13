@@ -28,27 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_ejecutar = new System.Windows.Forms.Button();
+            this.btn_Leer = new System.Windows.Forms.Button();
+            this.btn_Escribir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btn_ejecutar
+            // btn_Leer
             // 
-            this.btn_ejecutar.Location = new System.Drawing.Point(413, 119);
-            this.btn_ejecutar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_ejecutar.Name = "btn_ejecutar";
-            this.btn_ejecutar.Size = new System.Drawing.Size(373, 208);
-            this.btn_ejecutar.TabIndex = 0;
-            this.btn_ejecutar.Text = "Ejecutar";
-            this.btn_ejecutar.UseVisualStyleBackColor = true;
-            this.btn_ejecutar.Click += new System.EventHandler(this.btn_ejecutar_Click);
+            this.btn_Leer.Location = new System.Drawing.Point(78, 200);
+            this.btn_Leer.Name = "btn_Leer";
+            this.btn_Leer.Size = new System.Drawing.Size(199, 83);
+            this.btn_Leer.TabIndex = 1;
+            this.btn_Leer.Text = "Leer";
+            this.btn_Leer.UseVisualStyleBackColor = true;
+            // 
+            // btn_Escribir
+            // 
+            this.btn_Escribir.Location = new System.Drawing.Point(78, 60);
+            this.btn_Escribir.Name = "btn_Escribir";
+            this.btn_Escribir.Size = new System.Drawing.Size(199, 70);
+            this.btn_Escribir.TabIndex = 2;
+            this.btn_Escribir.Text = "Escribir";
+            this.btn_Escribir.UseVisualStyleBackColor = true;
+            this.btn_Escribir.Click += new System.EventHandler(this.btn_Escribir_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.btn_ejecutar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(358, 351);
+            this.Controls.Add(this.btn_Escribir);
+            this.Controls.Add(this.btn_Leer);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -57,7 +67,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_ejecutar;
+        private System.Windows.Forms.Button btn_Leer;
+        private System.Windows.Forms.Button btn_Escribir;
     }
 }
 
