@@ -15,8 +15,7 @@ namespace POOpractica1
     public partial class Form1 : Form
     {
 
-        Celular Motorolla = new Celular();
-
+        Persona P = new Persona();
         public Form1()
         {
             InitializeComponent();
@@ -24,9 +23,10 @@ namespace POOpractica1
 
         private void btn_ejecutar_Click(object sender, EventArgs e)
         {
-            Motorolla.Ejecutar();
-
-            MessageBox.Show(Operaciones.Sumar(100, 400).ToString());
+            P.Nombre1 = "Jykpo";
+            P.dni = "12345678";
+            P.Ciudad1 = "Madrid";
+            MessageBox.Show(P.dni);
 
         }
     }
